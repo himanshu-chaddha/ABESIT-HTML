@@ -12,12 +12,23 @@
     <h1>Forms in Html</h1>
     <div>
         <h3>Login Form</h3>
-        <form action="http://www.wikipedia.org" method="GET">
-            <label for="email">Email :</label>
-            <input type="email" name="email" id="email" required>
-            <label for="password">Password :</label>
-            <input type="password" name="password" id="password"  minlength="8" required>
-            <button type="submit">Login</button>
+        <!-- form with method and action -->
+        <form action="http://www.wikipedia.org" method="POST">
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" required placeholder="Email">
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" minlength="8" required placeholder="Password">
+            </div>
+            <div>
+              <span>*</span><input type="checkbox" name="agree" id="agree" required><label for="agree">All fields mentioned are
+                    correct</label>
+            </div>
+
+            <div>
+                <button type="submit">Sign In</button>
+                <button type="reset">Cancel</button>
+            </div>
         </form>
     </div>
 
