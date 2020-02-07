@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 1</title>
+</head>
+
+<body>
+    <h1>Sign Up Form</h1>
+    <form action="http://www.wikipedia.org" method="post">
+        <div>
+            <label for="firstname">Firstname :</label>
+            <input type="text" name="firstname" id="firstname" required placeholder="Firstname">
+            <label for="lastname">Lastname :</label>
+            <input type="text" name="lastname" id="lastname" required placeholder="Lastname">
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" required placeholder="Email">
+            <label for="password">Password :</label>
+            <input type="password" name="password" id="password" required placeholder="Password" pattern="(?=^.{8,12}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                title="Password should have minimum 8 and maximum 12 characters long,and must contain at least 1 number, 1 uppercase letter, 1 lowercase letter">
+        </div>
+        <div>
+            <label for="profilePic">Profile Picture :</label>
+            <input type="file" name="profilePic" id="profilePic" required placeholder="Please choice profile picture">
+            <label for="dob">DOB :</label>
+            <input type="date" name="dob" id="dob" required placeholder="DOB">
+        </div>
+        <div>
+            <label for="mobile">Mobile No. :</label>
+            <input type="tel" name="mobile" id="mobile" required placeholder="+91 Mobile Number" minlength="10"
+                maxlength="10">
+            <label>Gender :</label>
+            <!-- input type radio is used to create radio buttons -->
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="transgender" required>
+            <label for="other">Others</label>
+        </div>
+        <div>
+            <input type="checkbox" name="agree" id="agree" required>
+            <label for="agree"><span>I Agree Terms & Conditions </span></label>
+        </div>
+        <div>
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>
